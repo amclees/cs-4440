@@ -1,0 +1,50 @@
+Beginning of class from now on will have a quiz to encourage attendance.
+
+Processes
+
+Batch system jobs - downloading a file
+Time-shared systems - user programs
+
+A process is a program in execution
+It must execute in order
+It has a program counter, stack, and data section.
+
+Program counter tracks the address of the running instruction.
+The stack tracks calls and keeps local data
+Heap keeps other data
+By "text", we mean the program
+
+Process's state goes from new to ready to running to waiting and eventually is terminated.
+
+Process Control Block (PCB)
+
+The PCB holds information related to each process:
+State
+Program counter
+CPU regosters
+CPU scheduling information
+Memory management information
+Accounting information
+IO status information
+
+PCB is stored in memory
+The CPU switches between multiple processes by storing the PCB in main memory and loading another PCB
+
+
+Long term scheduler schedules jobs into ready queue
+Short term scheduler schedules which process should be executed next
+
+2 types of process:
+IO-bound processes spend more time doing IO, only uses short CPU bursts
+CPU-bound processes uses a lot of CPU time
+
+In Solaris, there is a tree of processes; each process has children
+
+Parent and child processes may run concurrently or sequentially, and may share all, a subset of, or no resources
+
+Bring laptop next time
+
+Next time is quiz, covering chapter 1 and chapter 2
+Quiz is simple, it will be multiple choice
+Not open notes
+No class Monday
