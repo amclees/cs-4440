@@ -1,0 +1,63 @@
+Operating System Services
+
+Include:
+  UI
+  Program execution
+  I/O
+  File system
+  Communication
+  Error detection
+    Consistent error output
+  Efficiency Management
+    Track use of resources and allocate them
+    Security (auth, I/O, system resources)
+  CLI
+
+These services are offer via system calls.
+Typically, each call has a number.
+Caller only needs to know the interface, not the implementation.
+
+System programs reduce the need for system calls by providing functionality directly to the user.
+File managers, network managers, etc. are system programs.
+Program language support may also be included (e.g. Java VM or Python).
+
+Some OS's (Windows) store config in a highly unreliable and slow system called a registry.
+
+
+Operating System Design & Implementation
+
+Users have their own goals, but system goals will ultimately help achieve them.
+As usual, all goals have trade-offs.
+
+
+MS-DOS
+
+Not divided into modules, fairly simple hierarchical structure:
+
+Application program
+Resident system program
+MS-DOS device drivers
+ROM BIOS device drivers
+
+Each layer has access to the layer directly below it and the ROM BIOS device drivers.
+This layered approach is common, from layer 0 (hardware) to layer n (UI).
+
+
+UNIX
+
+Two parts: system programs and the kernel
+
+Kernel controls the hardware, system-call interface accesses the kernel.
+Also includes a variety of system programs that access the kernel.
+
+
+Mac OS X
+
+Based on BSD (Berkeley System Delivery)
+
+
+Modules
+
+Most OS's implement kernel modules using an OO approach.
+Solaris is an example of an OS with kernel modules.
+
