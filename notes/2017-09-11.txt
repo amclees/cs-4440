@@ -1,0 +1,32 @@
+Producer-Consumer Problem
+
+If you have a bounded buffer you must wait until a buffer is free to place a process
+
+
+Interprocess communication (IPC)
+
+Needed for sending messages between processes via shared memory or a bus
+Use a queue to handle sending and receiving
+
+In direct messaging a link is established between processes and there are methods to read or receive messages
+In indirect messaging messages are sent to a port which can be read by the other process
+
+Send/receiving can be blocking or non-blocking
+
+With no buffer message must be received immediately
+With bounded capacity senders wait when the buffer is full
+Unlimited buffer means no wait, it is highly realistic and often constructed using infinite size hard drives
+
+Remote Procedure Call (RPC)
+
+RPC is a way to communicate between processes on multiple machines
+Sockets (Network)
+Java has has a unique system, Remote Method Invocation (RMI) which does the same thing as RPC
+
+Multithreading
+
+Many-to-One - Many user threads handled by one kernel thread
+One-to-One - Each user thread has a kernel thread
+Many-to-Many - Many user threads handled by many kernel threads
+
+
