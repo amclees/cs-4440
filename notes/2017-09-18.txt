@@ -1,0 +1,13 @@
+Test will be on Wednesday
+It will cover everything up to today
+It is multiple choice
+It is 5 questions
+
+Multiprogramming attempts to maximize CPU usage
+Preemptive scheduling can interrupt a process involuntarily
+
+A dispatcher is a component of the OS
+It controls the CPU from one process to another
+It switches to process context
+
+
