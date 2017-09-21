@@ -1,0 +1,27 @@
+Scheduling of Processes
+
+Switching between processes takes time
+Thus, there are a number of criteria for scheduling processes
+Max ->  CPU Utilization
+Max ->  Throughput
+Min ->  Turnaround time
+Min ->  Waiting time
+Min ->  Response time
+
+Scheduling types:
+  FCFS (First come first serve)
+    More intensive processes make the others wait a long time
+  SJF (Shortest job first)
+    Is optimal, gives minimum average waiting time
+    If it is preemptive, processes can have their resources taken away while running
+
+0
+2
+7
+11
+
+11 + 7 + 2 / 4 = 20 / 4 = 5
+Could be 8
+
+This example is FCFS. A queue can be used to implement it.
+
