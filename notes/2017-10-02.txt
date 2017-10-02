@@ -1,0 +1,47 @@
+More on scheduling algorithms
+
+SJF (Shortest job first) preemptive and nonpreemptive
+
+Determining the length of the next CPU burst is an estimate
+
+T - predicted time
+t - real time (nth)
+a - a number between 0 and 1 to tune the estimate
+
+T_n+1 = a * t_n + (1 - a)T
+
+a values
+  0 makes the old real value not count
+  1 makes the old real value count
+
+
+Priority Scheduling
+
+A priority number is given to each process
+The CPU is allocated to the process with the highest priority
+There are preemptive and nonpreemptive versions
+
+Has the problem of process starvation -> low priority may never execute
+It may be solved by aging a process; the priority is raised over time
+
+
+Round Robin (RR)
+
+Preemptive
+Each process is given 10-100ms (time quantum) on the CPu
+Each process gets 1/n of CPU time, no process waits longer than (n - 1)q time
+
+If q is large, it is like first come first serve
+If q is small, switching processes wastes time on overhead
+
+Better response times than SJF but average is not as good
+
+
+Multilevel Queue
+
+Has possibility of starvation
+Runs foreground and background processes in seperate queues
+Can use different methods for each level of the queue (e.g. RR at one level and SJF at another)
+Needs to move them to avoid starvation, upgrading and demoting is important
+Can have many queues with different algorithms
+
