@@ -1,0 +1,90 @@
+Deadlock Requirements
+
+Mutual exclusion
+Hold and wait
+No preemption
+Circular wait
+
+All are required for deadlock
+
+P_i is a process
+R_i is a resource
+
+A graph may be used to visual transitions between usage state
+This can make it easier to identify deadlock
+
+To prevent deadlock
+  Mutual exclusion - should only be used on non-shared resources
+  Hold and wait - Require process to have resources allocated before running or require it to have no resources before requesting resources
+  No preemption - Preempt waiting process
+  Circular wait - limit order
+
+Midterm preparation
+
+Ch. 1 is more important than Ch. 2
+
+Chapter 1
+  3 - Structure of PC
+  4 - Four components
+  13 - IO Structure
+  14 - Two IO methods
+  21 - OS structure
+  23 - OS operations
+  24 - User to kernel
+
+Chapter 2: OS Structures
+  Slide number - description
+  27 - VMs
+  31 - Java VM
+
+Ch. 3 is very important, especially first half
+
+Chapter 3: Processes
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  12
+  14
+  15
+  16
+  17
+  18
+  19
+  33
+
+Chapter 4
+  2
+  4
+  11 - Java Thread
+  12 - Thread states "You need to know"
+
+Ch. 5 is important
+Chapter 5
+  2
+  3
+  5
+  6
+  7 - Exactly how
+  8 - Need to
+  9
+  10
+  11
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  19
+  22
+  25
+
+Chapter 6 is not on the midterm, is on the final.
+
+If everyone is here Monday midterm is Wednesday
