@@ -1,0 +1,38 @@
+Deadlock Continued
+
+Some additional information may be required by deadlock avoidance algorithms
+
+Safe State
+  When a process makes a request, the system checks if allocation leaves it in a safe state
+  A safe state is a sequence of all the processes so that each process can request resources and be served without deadlock
+  There is no deadlock in a safe state
+
+Banker's Algorithm
+  n = # of procs
+  m = # of resource types
+  Available - int[m]
+  Max - int[n][m]
+  Allocation - int[n][m]
+  Need - int[n][m]
+  Finish[i] must be true for all i for it to be a safe state
+
+  Seems like it will be on exam
+               allocation                  max          need      finish
+        A            B         C       A    B   C      A  B  C
+  p0    0            1         0       7    5   3      7  3  3    true (4)
+  p1    2            0         0       3    2   2      1  2  2    true (1)
+  p2    3            0         2       9    0   2      6  0  0    true (5)
+  p3    2            1         1       2    2   2      0  1  1    true (2)
+  p4    0            0         2       4    3   3      4  3  1    true (3)
+
+               A  B  C
+  available    3  3  2
+  work         10 5  7
+
+  p1, p3, p4, p0, p2 is the sequence
+
+Resource-request Algorithm
+  Keeps state, requires process to specify max resources beforehand
+  Uses Banker's Algorithm to determine safety and decide whether to deny or grant request
+  Uses the same structures as Banker's algorithm
+
