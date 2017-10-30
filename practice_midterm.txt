@@ -1,0 +1,255 @@
+1. Computer system can be divided into four components: hardware, the operating system, application programs, and ___.
+a. System programs
+b. Users
+c. Process scheduling
+d. The CPU
+e. The kernel
+
+2. The wait instruction idles the CPU until the next ___ in a synchronous IO system.
+a. Input from IO device
+b. Wait
+c. Interrupt
+d. Semaphore
+
+3. At most ___ IO request(s) are outstanding at a time in a synchronous IO system running on a 32-bit Intel processor.
+a. 1
+b. 2
+c. 4
+d. 2^31 - 1
+e. 2^32
+
+4. An asynchronous IO system uses a a ___ table to track the type, address, and state of each IO device.
+a. Device-status
+b. IO-status
+c. Device-tracker
+d. Vectored device
+
+5. Control returns to a process in asynchronous IO when ___.
+a. IO finishes
+b. IO starts
+c. IO is halfway done
+d. The process requests control back
+
+6. Multiprogramming is ___ for an efficient OS.
+a. Needed
+b. Not needed
+
+7. The difference between multiprogramming and timesharing is that ___.
+a. Timesharing is an extension of multiprogramming used by the OS to receive input and run many jobs simultaneously.
+b. Multiprogramming involves using multiple programming languages.
+c. Multiprogramming is more efficient than timesharing.
+d. Timesharing does not account for virtual memory.
+
+8. A software error or request may cause an exception, also known as a(n) ___.
+a. Error
+b. Segmentation fault
+c. Trap
+d. Pitfall
+
+9. The mode bit differentiates between user mode and ___ mode.
+a. Colonel
+b. Kernel
+c. Administrator
+d. Authorized
+e. Root
+
+10. An OS can prevent an infinite loop from hogging OS resources by ___.
+a. Using a counter to limit total calls
+b. Terminating programs after a certain timer
+c. Running the command `sudo rm /bin/bash`
+d. a and b
+
+11. A virtual machine provides an interface ___ the underlying bare hardware.
+a. Similar to
+b. More efficient than
+c. Easier to use than
+d. Identical to
+
+12. The Java VM uses a(n) ___ to load the program files it will run.
+a. Interpreter
+b. Compiler
+c. Class loader
+d. JAR file
+
+13. The Java VM uses a(n) ___ to execute loaded program files.
+a. Interpreter
+b. Compiler
+c. Class loader
+d. JAR file
+
+14. A program consists of ___.
+a. A program counter, stack, and data section
+b. Source code
+c. A developer an a user
+
+15. A process's program counter is used to ___.
+a. Counter the number of times the program has been run
+b. Prevent the Java VM from interpreting x86_64 machine code
+c. Track the next instruction to be executed
+
+16. The five process states are ___.
+a. New, running, sleeping, ready, and terminated
+b. New, in progress, sleeping, ready, and terminated
+c. Started, running, waiting, ready, and finished
+d. New, running, waiting, ready, and terminated
+
+17. A process transitions from ready to running on ___.
+a. Admitted
+b. I/O or event completion
+c. Scheduler dispatch
+d. Interrupt
+
+18. The process control block (PCB) tracks the status and resources of a process, including ___.
+a. CPU registers
+b. RAM registers
+c. Memory management information
+d. IO status information
+e. a and c
+f. a, c, and d
+
+19. The CPU switches processes by swapping out PCBs.
+a. True
+b. False
+
+20. The three classes of process scheduling queues are the job queue, __ queue, and device queues.
+a. Waiting
+b. Ready
+c. IO
+d. Saving
+
+21. A process can migrate between scheduling queues.
+a. True
+b. False 
+
+22. The job scheduler ___.
+a. Puts processes in the ready queue
+b. Sends jobs to the RAM for processing
+c. Schedules jobs to run on the internal RAM processor
+d. Allocates the CPU to the process that should be executed next
+
+23. The short-term scheduler ___.
+a. Puts processes in the ready queue
+b. Sends jobs to the RAM for processing
+c. Schedules jobs to run on the internal RAM processor
+d. Allocates the CPU to the process that should be executed next
+
+24. Speed is more important for the ___.
+a. Job scheduler
+b. CPU schedular
+
+25. Processes are either CPU-bound or ___-bound.
+a. Cache
+b. RAM
+c. Job
+d. IO
+
+26. Switching between PCBs typically has ___ overhead.
+a. No
+b. Highly useful
+c. Some
+d. About 16 ms
+
+27. Parent and child processes either execute concurrently or ___.
+a. Parent waits until children terminate
+b. Children wait until parent terminates
+c. Child waits until parent and siblings terminate
+
+28. In UNIX, the ___ call is used to create a child process with a new program in its memory space.
+a. fork 
+b. exec
+c. chown
+d. shell
+
+29. The return value of the fork call is ___ for the child process.
+a. 0
+b. 1
+c. -1
+d. pid + 1
+
+29. The return value of the fork call is ___ for an error.
+a. 0
+b. 1
+c. -1
+d. pid + 1
+
+30. Blocking methods will ___.
+a. Wait for IO before continuing program execution
+b. Continue executing the program while waiting on IO
+
+31. Non-blocking methods are ___.
+a. Asynchronous
+b. Syncronous
+
+32. The threads of a multithreaded process may share ___.
+a. Code, data, files
+b. Registers, stack storage
+c. CPU time
+d. All of the above
+e. a and c
+
+33. Which of the following is not a multithreading model:
+a. Many-to-One
+b. One-to-One
+c. Many-to-Many
+d. One-to-Many
+
+34. Java threads are managed by ___.
+a. CPU
+b. JVM
+c. LLVM
+d. IETF
+
+35. Java threads may be created by ___.
+a. Implementing ExecutorService
+b. Extending Thread class
+c. Implementing the Runnable interface
+d. b and c
+
+36. There are ___ states a Java thread can be in.
+a. 1
+b. 2
+c. 3
+d. 6
+e. 7
+f. 8+
+
+37. The states of a Java thread are ___.
+a. New, running, sleeping, runnable, blocked, dead
+b. New, in progress, runnable, blocked, dead, and terminated
+c. Started, running, waiting, ready, and finished
+d. New, runnable, blocked, dead
+e. New, running, waiting, ready, and terminated
+
+38. A Java thread may transition to the blocked state via ___.
+a. IO
+b. sleep()
+c. return
+d. a and b
+
+39. A Java thread may terminate its own execution from the blocked state.
+a. True
+b. False
+
+Need Ch. 5 questions
+
+Ch. 5 is important
+Chapter 5
+  2
+  3
+  5
+  6
+  7 - Exactly how
+  8 - Need to
+  9
+  10
+  11
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  19
+  22
+  25
