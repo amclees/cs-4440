@@ -208,7 +208,7 @@ d. b and c
 36. There are ___ states a Java thread can be in.
 a. 1
 b. 2
-c. 3
+c. 4
 d. 6
 e. 7
 f. 8+

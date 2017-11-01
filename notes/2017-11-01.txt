@@ -1,0 +1,32 @@
+Deadlock Prevention Continued
+
+Recovery from deadlock is also important
+  Abort all deadlocked processes
+  Abort processes one by one until there is no longer deadlock
+    Choosing the order depends on a variety of factors relating to the importance of the process
+
+Deadlock finished
+
+
+Main Memory
+
+Protection of memory is a requirement of any OS
+
+There is a logical address, and a physical address
+The logical address is the way the CPU views the memory
+These addresses are the same in compile-time and load-time binding schemes but can be different otherwise
+
+The system has a memory-management unit (MMU)
+It translates logical addresses to physical addresses
+
+MMU is integrated into the RAM unit
+
+Dynamic linking postpones linking until execution time
+
+Swapping
+
+Processes may be swapped into storage out of memory
+If the process is not running it may be swapped out
+
+Swapping is somewhat expensive
+
