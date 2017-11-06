@@ -1,0 +1,46 @@
+Main Memory Continued
+
+Exam Wednesday, not online
+
+The OS is usually in the lower addresses
+
+The MMU uses a pair of base and limit registers to determine to range of memory accessible to a user program
+
+Contiguous allocation meaans all processes have one large chunk of memory
+  In this scheme the OS needs to track free holes and allocate them
+  Find the smallest hole (best fit)
+
+  First-fit
+  Best-fit
+    Smallest hole
+  Worst-fit
+    Largest hole
+    Worst in terms of performance
+
+Fragmentation
+  External
+    Memory exists to satisfy a request but is not contiguous
+    Cannot always allocate even if there is room
+  Internal
+    Allocate some extra memory between requested memory
+  Need to try to remove fragmentation by compaction
+    Moves around memory, and must be done at execution time
+
+Paging
+  All modern OSes use paging
+  It divides memory into blocks called frames (usually 512 to 8,192 bytes (1k, 2k, 4k are most used))
+  Can scatter these pages across memory
+  Use a page table to translate logical addresses
+  No external fragmentation
+  There is internal fragmentation when the inside of a frame is not fully utilized
+  Speak in kb not bytes
+
+  The paging in Windows XP is what limits memory to 4 GB
+
+  Address translation schemes depend on the number of bits in addresses used by the CPU
+  Paging is also built into hardware
+
+  This is different from contiguous allocation, memory of a single process is spread throughout memory
+
+  Free frames are tracked and reallocated by the OS
+
