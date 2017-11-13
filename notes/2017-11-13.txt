@@ -1,0 +1,40 @@
+Memory Management Continued
+
+Best way to implement is to use pages
+
+To access an address:
+  Use page table to find which page
+  Get memory from the page
+
+TLB
+  Translation lookup buffer
+  If an address is in the translation lookup buffer the frame is known immediately, otherwise the page table is checked
+
+EAT
+  Effective access time
+  There is epsilon for the associative lookup time
+  Alpha is the hit ratio (percentage it is found is registers)
+  The memory cycle time is 1 ms
+  EAT = ((1 + epsilon) * alpha) + ((2 + epsilon) * (1 - alpha))
+
+Memory Protection
+  Use a valid-invalid bit
+  Valid indicates a page is legal, invalid indicates a page is illegal
+  This bit is stored in the page table; if the process tries to access a frame with an invalid valid-invalid bit it will fail
+
+May have shared pages
+  Some code is shared between processes, it is kept in read-only shared pages
+
+How to structure the page table
+  Hierarchical page tables
+    Break the logical address into multiple tables
+    Lots of databases use multilevel indices
+  Hashed page tables
+    Common is bigger address spaces than 32 bits
+
+Segmentation
+  A program is a collection of segments for different parts of data
+  This is split according to semantics, not just size like frames
+
+  Segmentation uses a validation bit
+
