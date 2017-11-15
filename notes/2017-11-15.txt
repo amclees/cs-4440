@@ -1,0 +1,50 @@
+Got exams back
+
+The final is not cumulative
+
+There will be a review 2017-11-27, no class on 2017-11-29
+Final exam 13:30 to 15:30 on 2017-12-06
+
+
+Virtual Memory
+
+Important chapter
+
+Virtual memory is the separation of logical memory from physical memory
+Expands memory beyond just the limits of the RAM
+There are multiple ways to implement it
+
+The page table doesn't always need to map to main memory locations, swap can also be used
+Shared libraries may be stored on the same shared virtual memory pages
+
+Demand Paging
+  Only uses main memory for a page if it is needed
+  When a page not in memory is accessed, it is swapped into memory
+  A lazy swapper only swaps needed pages into memory, no other pages will be stored in main memory
+  A swapper with pages is called a pager
+
+The page table in virtual memory has a valid-invalid bit just like other memory, but it is set for whether or not a page is inside memory
+
+If there is no reference to a frame, trying to get it will result in a trap
+  This is called a page fault
+  The OS then pulls the frame into memory, either into an empty frame or a frame which can be put back on the disk
+
+Performance of demand paging
+  p is the page fault rate (probability of a fault)
+  Effective Access Time 
+   (1 - p) * mem_access + p * (page_fault_overhead + swap_in + swap_out + restart_overhead)
+  If your memory is slow and your OS, SSD, and bus are good then p is not as important
+
+Algorithms exist to minimize page faults by choosing pages to evict prudently
+Unchanged pages are not written back to disk when swapped out if they are still present on the disk
+
+If there is no free frame, the framing algorithm selects a victim frame
+
+The goal in the design of the algorithms is to minimize page faults
+
+If memory is large enough, the number of page fault will be 0
+
+Algorithms
+  FIFO
+    What it sounds like
+
