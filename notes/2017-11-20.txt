@@ -1,0 +1,52 @@
+Virtual Memory Continued
+
+Page faults decrease as number of frames increase
+
+This is especially true with FIFO
+It is called Belady's Anomaly
+
+Optimal algorithm
+  Replace the page which will not be used for the longest period of time
+
+Example
+  1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5
+  Which one is not going to be used for a while?
+  5
+
+  1 p1 4
+  2 p2 2
+  3 p3 3
+  4 p4 5
+  1
+  2
+  5 p5
+  1
+  2
+  3
+  4 p6
+  5
+
+In reality you do not know which page will be used next, so this algorithm is theoretical
+It is the baseline for evaluating other algorithms
+
+Least Recently Used (LRU)
+  Close to optimal
+  The thing that has been least recently used is evicted
+
+  Problems work out just like the optimal algorithm
+
+  Each page has a counter
+
+  Can use a stack of page numbers
+
+Thrashing
+  Without enough pages, a process will have many page faults
+  This is a bad situation, CPU utilization drops
+  Thrashing is when a process is busy swapping pages in and out
+
+The OS should load enough programs that there is no thrashing but CPU utilization is still high
+
+Page size needs to account for some other things
+  If they are too small there is overhead from loading lots of them
+  If they are too large there is overhead from loading large pages which are not being fully used
+
