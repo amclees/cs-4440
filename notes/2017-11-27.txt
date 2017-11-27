@@ -1,0 +1,90 @@
+Final Exam
+  Same as midterm, fill in the blanks
+  Time is 1:30-3:30 Wednesday 2017-12-06
+
+  Chapter 6
+    5
+    6
+    7
+    8
+    14
+    15
+    16
+    17
+    18
+    19
+    24
+    25
+    26
+
+  Chapter 7
+    5
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    20
+    24
+    25 - "This one you need to know"
+    26
+    27
+    28
+    29
+    30
+    32
+    33
+    34
+    35 - "Not numbers, just how it works"
+    36
+
+  Chapter 8
+    3
+    6
+    8
+    11
+    13
+    14
+    15
+    16
+    17
+    18
+    19 - "This is important, you need to know how to translate the address"
+    20
+    24
+    25
+    26
+    27 - "This one, you need to know how to do it"
+    30
+    32 - "Need to know what it is, how to do it"
+    33 - "Just understand, not memorized"
+    35
+    36
+    37
+    38
+    39
+    40
+    41
+
+  Chapter 9
+    2
+    3
+    4
+    5
+    6 - "This is important okay, why we do demand paging"
+    8
+    10 - "This is important"
+    13 - "This is important, need to know how to access, total time"
+    14 - "Important, do it twice practice"
+    16
+    18 - "This one definetely need to know"
+    20 - "Important"
+    22 - "Definitely need to know how to do it"
+    24
+    25 - "Need to know"
+    26 - "Need to know"
+    27
+
