@@ -1,0 +1,168 @@
+1. Two process doing operations on the same value at the same time results in a ___.
+
+2. Mutual exclusion allows for a process to be the only process executing its ___ at any given time.
+
+3. If a process wishes to enter a ___, it ___ be made to wait indefinitely.
+
+4. A guarantee that other processes will only be able to enter their critical sections a certain number of times while another process is waiting to enter its own critical section is known as ___.
+
+5. In the situation described in question 4, ___ is assumed about the relative speed of the processes.
+
+6. ___ Solution for mutual exclusion works for up to ___ processes.
+
+7. ___ Solution uses the ___ array to keep track of which process is ready to enter a critical section.
+
+8. A ___ is a synchronization tool that does not require ___ and is backed by a(n) ___.
+
+9. The ___ operation increments the underlying variable supporting a ___.
+
+10. The ___ operation stops execution until the underlying variable of the ___ is ___ 0, then ___ it and continues execution.
+
+11. The two operations supported by ___ are assumed to ___ run on the same ___ at the same time.
+
+12. To eliminate busy-waiting, a ___ may be implemented with a ___ upon which the block and wakeup operations are defined.
+
+13. In order to allow multiple processes to access and change the same object at the same time, the ___ Problem must be solved.
+
+14. In the ___ Problem, ___ and a(n) ___ are used for synchronization.
+
+15. ___ is a variable used to track the current number of readers reading.
+
+16. ___ occurs when processes each possess a resources and is waiting for another process's resource.
+
+17. ___, ___, ___, and ___ are the four requisites for deadlock to arise.
+
+18. If a ___ graph has cycles, deadlock is guaranteed to occur if there is/are ___ instance(s) of each resource type.
+
+19. Deadlocks may be handled by ensuring no deadlocks, recovering from deadlocks, or ___.
+
+20. Deadlock can be prevented by requiring ___ or applying limits to ___ and ___.
+
+21. Applying ___ and ___ can result in resource ___.
+
+22. Preempting resources ___ deadlock.
+
+23. ___ can be prevented by imposing a ___ on all resources types and requiring resource requests to conform to this.
+
+24. The simplest algorithm for avoiding deadlock is to require processes to ___ all the resources they will use at ___.
+
+25. If there is a sequence of resource requests that may be fulfilled, the system is in a ___.
+
+26. ___ states have a possibility of deadlock.
+
+27. In the ___ graph scheme, edges start as ___, convert to ___ when ___, convert to ___ when ___, and finally convert back to ___ upon ___.
+
+28. In the ___ algorithm, processes must claim resources ___, and return them ___.
+
+29. `Available` is a vector of length ___.
+
+30. `Max` is a m x n ___.
+
+31. `Allocation` is a ___ matrix.
+
+32. `Need` is a ___.
+
+33. `Need[i, j] = ___`
+
+34. The two part of the Banker's algorithm are called the ___ algorithm and the ___ algorithm.
+
+35. `Work` is a ___ initialized to ___, and `Finish` is a ___ initialized to ___.
+
+36. Consider 5 processes P_0 to P_4 and 3 resource types A, B, and C with a number of instances equal to 10, 5, and 7 respectively.
+P_0, P_1, P_2, and P_4 each have a `Max` row of 3 zeroes.
+P_3 has a `Max` row of [100, 0, 0] and an `Allocation` row of [5, 0, 0].
+The `Need` value corresponding to P_3 and resource A is ___.
+
+37. Consider the situation in problem 36. The system is in a(n) ___ state.
+
+38. The deadlock detection algorithm requires O(___) operations to determine if the system is in a deadlock state, where m is ___, and n is ___.
+
+39. The deadlock detection algorithm uses two additional vectors `___` and `___` to calculate whether the system is in a ___.
+
+40. The two address spaces for memory are the ___ address space and the ___ address space.
+
+41. The ___ address space is defined by the ___ and limit registers.
+
+42. ___ addresses are also called ___ addresses. They are ___ed by the CPU.
+
+43. The ___ address is the address used by the ___.
+
+44. The ___ maps ___ addresses to ___ addresses.
+
+45. The value of the ___ register is ___ed to the logical address to obtain the ___ address.
+
+46. ___ is used to save memory space by ___ing a ___'s memory space on the ___.
+
+47. ___ Allocation usually splits memory into ___ partitions.
+
+48. User processes are usually held in ___ memory.
+
+49. The base and limit registers are used to protect processes and the operation system from each other.
+
+50. A ___ to the OS happens when a process tries to access memory outside the area allowed by the base and limit registers.
+
+51. In allocating storage, first-fit, ___-fit, and ___-fit may be used to allocate memory.
+
+52. Fragmentation should be ___ed by shuffling memory contents to place free memory ___.
+
+53. The physical memory equivalent of pages in logical memory is the ___.
+
+54. The page table maps the ___ to the ___.
+
+55. The page ___ contains the location of data within a page.
+
+55. The page ___ has a size of `m - n` bits, and the page ___ has a size of `n` bits. This is for a logical address space of size `2^m` and page size `2^n`.
+
+56. The ___ register points to the page table. The ___ register indicates the ___ of the page table.
+
+57. TLB stands for ___.
+
+58. Some TLBs use ___s to identify processes in order to protect sections of memory.
+
+59. To lookup a value in paged memory, first the ___ register is checked for the page number then the page table is checked.
+
+60. EAT = ___.
+
+61. Some pages are ___ pages, and may be accessed by multiple processes.
+
+62. ___ paging, ___ tables, and ___ tables are 3 structures that may be used to implement a page table.
+
+63. A ___ table splits the logical address space into multiple tables.
+
+64. In a ___ page table, the page number part of an address is split into multiple parts.
+
+65. A(n) inverted page table has an entry for each real page of memory.
+
+66. Hashed page tables are common in address spaces larger than 32 bits.
+
+67. ___ memory is used to provide a larger amount of memory to processes than allowed by physical memory.
+
+68. ___ memory can be implemented via demand ___ or ___ segmentation.
+
+69. A typical program has components in memory including the stack, ___, ___, and ___.
+
+70. ___ memory allows for shared ___ in memory.
+
+71. Demand paging is used because it ___, ___, ___, and accommodates more users.
+
+72. A ___-___ bit is also used with virtual memory to track which pages are ___.
+
+73. A ___ occurs when a page outside main memory is referenced.
+
+74. A page fault takes 1 second to resolve. Accessing a value in memory takes 1 nanosecond.
+Calculating the EAT given a page fault rate of 0.001 produces a result of ___.
+
+75. Assuming the same values above, calculating the EAT given a page fault rate of 0.4 produces a result of ___.
+
+76. The ___ bit is modified to indicate that a page has been changes and should be written to disk.
+
+77. The goal of a page ___ algorithm is to ___ the page fault rate.
+
+78. More frames means more ___s for the ___ algorithm.
+
+79. The ___ algorithm is used to measure the performance of other algorithms.
+
+80. The optimal algorithm replaces the page that ___.
+
+81. The ___ algorithm replaces the page that was used the longest ago.
+
